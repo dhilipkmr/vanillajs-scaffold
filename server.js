@@ -33,7 +33,7 @@ app.get('/:location/:file', function (req, res) {
 	sendFile(`./${req.params.location}/${req.params.file}`, req, res);
 });
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
 	res.write(index);
 	res.end();
 });

@@ -7,8 +7,42 @@
 		<title>Test</title>
 	</head>
 	<body>
-		
+		<div id="app">
+			<div id="searchbarWrapper" class="searchbarWrapper">
+				<input id="searchbar" type="text"/>
+			</div>
+			<div class="content">
+				<div id="mathchesView" class="mathchesView pad20 box-shadow">
+					<ul id="sortBy" class="sortBy">
+						<li>Alphabetical</li>
+					</ul>
+					<div id="matchContainer" class="matchContainer">
+					</div>
+				</div>
+				<div id="filters" class="filters pad10 box-shadow">
+					<div>
+						<p>Filters</p>
+						<div>
+							<div>Years</div>
+							<ul id="years">
+								<li>
+									<input type="checkbox" id="2011" value="2011">2011</input>
+								</li>
+								<li>
+									<input type="checkbox" id="2012" value="2012">2012</input>
+								</li>
+								<li>
+									<input type="checkbox" id="2013" value="2013">2013</input>
+								</li>
+								<li>
+									<input type="checkbox" id="2014" value="2014">2014</input>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
-	<script type="module" src="./src/lib/utils.js" defer></script>
 	<script type="module" src="./src/app.js" defer></script>
 </html>

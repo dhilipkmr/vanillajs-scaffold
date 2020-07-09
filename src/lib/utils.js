@@ -1,4 +1,8 @@
-function createCard(a) {
-	return `<div>Card</div>`;
+function debounce(cb, delay) {
+	let timer = null;
+	return (...args) => {
+		clearInterval(timer);
+		timer = setTimeout(() => cb(...args), delay);
+	}
 }
-export { createCard };
+export { debounce };

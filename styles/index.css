@@ -1,3 +1,70 @@
+:root {
+	--theme-color: #70c5d4;
+}
+
 body {
 	margin: 0px;
+}
+li {
+	list-style-type: none;
+}
+.box-shadow {
+	box-shadow: 0px 3px 2px 1px #EFEFF8;
+}
+.pad20 {
+	padding: 20px;
+}
+
+.pad10 {
+	padding: 10px;
+}
+
+.searchbarWrapper {
+	text-align: center;
+  margin: 40px auto;
+}
+input {
+	outline: none;
+}
+
+.content {
+	max-width: 1000px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+}
+
+.matchContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 10px;
+	justify-content: space-around;
+}
+.sortBy {
+	border: 1px solid #ded6d6;
+	padding: 10px;
+	border-radius: 5px;
+}
+.matchCard {
+	min-width: 200px;
+    min-height: 200px;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+		flex-direction: column;
+		margin: 10px;
+		line-height: 2em;
+}
+
+.mathchesView {
+	flex: 4;
+	padding: 20px;
+}
+.filters {
+	flex: 1;
 }
