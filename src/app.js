@@ -1,5 +1,12 @@
 import { createCard } from './lib/utils.js';
-function makeCard() {
-	document.body.innerHTML = createCard();
+import Child from './components/Child.js';
+
+class App {
+	constructor() {
+
+	}
 }
-document.addEventListener('DOMContentLoaded', makeCard);
+
+document.addEventListener('DOMContentLoaded', () => {
+	const app = new App();
+});
