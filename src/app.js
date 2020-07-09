@@ -1,4 +1,4 @@
-import { createCard } from '../lib/utils.js';
+import { createCard } from './lib/utils.js';
 function makeCard() {
 	document.body.innerHTML = createCard();
 }

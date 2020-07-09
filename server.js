@@ -12,8 +12,8 @@ app.listen(PORT, () => {
 	console.log(`Server started at: http://localhost:${PORT}/`);
 });
 
-app.get('/:location/:file', function (req, res) {
-	fs.readFile(`./${req.params.location}/${req.params.file}`, function (err, data) {
+function sendFile(location, req, res) {
+	fs.readFile(location, function (err, data) {
 		if (err) {
 			res.send("Oops! Couldn't find that file.");
 		} else {
@@ -22,6 +22,15 @@ app.get('/:location/:file', function (req, res) {
 		}
 		res.end();
 	});
+}
+
+app.get('/src/:location/:file', function (req, res) {
+	sendFile(`./src/${req.params.location}/${req.params.file}`, req, res);
+});
+
+
+app.get('/:location/:file', function (req, res) {
+	sendFile(`./${req.params.location}/${req.params.file}`, req, res);
 });
 
 app.get('/', (req, res) => {
