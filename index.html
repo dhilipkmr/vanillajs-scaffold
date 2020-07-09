@@ -7,8 +7,28 @@
 		<title>Test</title>
 	</head>
 	<body>
-		
+		<div id="app">
+			<div class="flex">
+				<div class="filters">
+					<div>1</div>
+				</div>
+				<div class="content">
+					<div><input id="search" type="text"/></div>
+					<div id="sort">
+						<ul>
+							<li id="arrival">Arrival</li>
+							<li id="depart">Departure</li>
+							<li id="fast">Fastest</li>
+						</ul>
+					</div>
+					<div id="cardsList"></div>
+				</div>
+			</div>
+			
+		</div>
 	</body>
-	<script type="module" src="./lib/utils.js" defer></script>
+	<script type="module" src="./src/Components/CardsList.js" defer></script>
+	<script type="module" src="./src/Components/Search.js" defer></script>
+	<script type="module" src="./src/Components/Sort.js" defer></script>
 	<script type="module" src="./src/script.js" defer></script>
 </html>
