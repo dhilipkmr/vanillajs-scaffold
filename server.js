@@ -4,10 +4,7 @@ const express = require('express');
 
 const PORT = 8000
 const app = express();
-
-
 const index = fs.readFileSync('index.html');
-
 app.listen(PORT, () => {
 	console.log(`Server started at: http://localhost:${PORT}/`);
 });

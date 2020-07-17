@@ -7,7 +7,27 @@
 		<title>Test</title>
 	</head>
 	<body>
-		<div id="app"></div>
+		<div id="app">
+			<header>
+				<div class="font-bold">Book Club</div>
+				<section class="section-login">
+					<input placeholder="username" value="" id="username" class="username"/>
+					<button type="button" id="btn-submit-username">Submit</button>
+				</section>
+			</header>
+			<div class="book-table-wrapper">
+				<table class="table-book-info" id="books-table">
+					<thead class="table-book-header" id="table-header">
+						<th>Id</th>
+						<th>Title</th>
+						<th>Author</th>
+						<th>Lender</th>
+						<th>Borrower</th>
+						<th>Action</th>
+					</thead>
+				</table>
+			</div>
+		</div>
 	</body>
-	<script type="module" src="./src/app.js" defer></script>
+	<script type="module" src="./src/app.js"></script>
 </html>

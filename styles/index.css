@@ -1,3 +1,52 @@
 body {
 	margin: 0px;
 }
+
+.font-bold {
+	font-weight: bold;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background:#26395d69;
+	padding: 20px;
+}
+
+.section-login {
+	margin-right: 40px;
+}
+
+.table-book-info {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+body {
+	background: #c8deff;
+}
+
+input.username {
+	outline: none;
+}
+
+td, .table-book-header th {
+  border: 1px solid #6b6767;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.book-table-wrapper {
+	max-width: 1000px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
